@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>You can add new properties to existing objects.</p>
+
+<p id="demo"></p>
+
+<script>
+var person = {
+    firstname:"Sandeep",
+    lastname:"Ghimire",
+    age:50,
+    eyecolor:"blue",
+	height:"5 feet 8 inches tall"
+};
+person.nationality = "Nepali";
+// here we add this new properties of nationality in the excisting previous properties 
+document.getElementById("demo").innerHTML = "the persen name is "
++person.firstname + " " + "and he  is " + person.nationality + " and also he is " + person.height;
+// and finnaly here we extract this upper properties of nationality. 
+</script>
+
+</body>
+</html>

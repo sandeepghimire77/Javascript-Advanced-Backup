@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>You can add new properties to existing objects.</p>
+
+<p id="demo"></p>
+
+<script>
+var person = {
+    firstname:"Sandeep",
+    lastname:"Ghimire",
+    age:50,
+    eyecolor:"blue",
+	height:"5 feet 8 inches tall"
+};
+person.nationality = "Nepali";
+
+// here we add this new properties of nationality in the excisting previous properties 
+delete person.age;
+// this delete keyword just deletes the age properties of a person . 
+document.getElementById("demo").innerHTML = "the persen name is "
++person.firstname + " " + "and he  is " + person.nationality + " and also he is " + person.height + "<br/>"
+
+ + "and he is "+person.age +" years old" ;
+
+
+// and finnaly here we extract this upper properties of nationality. 
+</script>
+
+</body>
+</html>

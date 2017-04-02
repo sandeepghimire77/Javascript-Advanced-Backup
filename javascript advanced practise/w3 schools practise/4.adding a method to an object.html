@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> Heading 1 </h1>
+<button value="change h1" onclick="ChangeStyles()"/> </button>
+
+
+
+<p id="demo">my name </p>
+
+
+<script>
+
+function ChangeStyles()
+{
+  // Modify the <h1> tag style.
+  var Header = document.getElementsByTagName("h1")
+  for (var i = 0; i < Header.length; i++)
+  {
+   Header[i].style.fontFamily = "Arial";
+   Header[i].style.fontSize = "45px";
+   Header[i].style.fontWeight = "bold";
+   Header[i].style.color = "green";
+   Header[i].style.textAlign = "center";
+   Header[i].style.marginLeft = "20px";
+   Header[i].style.marginRight = "20px";
+   Header[i].style.border = "medium double green";
+  }
+  // Modify the <p> tag style.
+  var Para = document.getElementsByTagName("p");
+  for (var i= 0; i < Para.length; i++)
+  {
+   Para[i].style.fontFamily = "serif";
+   Para[i].style.fontStyle = "italic";
+   Para[i].style.fontSize = "1em";
+   Para[i].style.color = "blue";
+  }
+}
+</script>
+
+</body>
+</html>
+ 
+
+
+
+
+
+

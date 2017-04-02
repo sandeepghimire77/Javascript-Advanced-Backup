@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo" > </p>
+
+<script>
+
+function person(firstname,lastname,age) {
+this.firstname=firstname;
+this.lastname=lastname;
+this.age=age;
+// here we edit or modify or change 
+this.changename=function(name){
+this.lastname=name;
+}
+
+};
+
+var mymom= new person("archana", "ghimire",25);
+mymom.changename("baral");
+document.getElementById('demo').innerHTML= 
+"my mom last name is" +" " + mymom.lastname + ".";
+</script>
+</body>
+</html>

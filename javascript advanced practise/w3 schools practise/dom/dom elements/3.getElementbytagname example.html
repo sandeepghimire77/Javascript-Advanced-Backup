@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Hello sandeep !</p>
+
+<p>The DOM is very useful.</p>
+<p>This example demonstrates the <b>getElementsByTagName</b> method</p>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementsByTagName("p");
+// ho yo tagname gare pachi chai sab tag of p by tag name p lai select gareko huncha ..tesaile pachi hamile hello sandeep dekhauna sakeko ho.. 
+document.getElementById("demo").innerHTML =
+'The first paragraph (index 0) is: ' + x[0].innerHTML;
+
+
+// x means hamile select gareko sabai <p> tag vanne bujaucha..ra x[0] vannale mathiko fist ko <p> lai denote garcha hello sandeep lai
+</script>
+
+</body>
+</html>
+
