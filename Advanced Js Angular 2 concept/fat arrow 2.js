@@ -1,0 +1,8 @@
+/**
+ * Created by Akshar on 6/13/2017.
+ */
+// globally defined this.i
+ const arr = [1, 2, 3];
+const squares = arr.map(x => x * x);
+console.log(squares);
+

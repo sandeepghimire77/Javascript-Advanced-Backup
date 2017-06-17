@@ -12,7 +12,7 @@ Job.prototype.print = function() {
 };
 
 // sub class
-var Techjob = function(title,pays) {
+ var Techjob = function(title,pays) {
     Job.call(this);
     this.title = title;
     this.pays = pays;
