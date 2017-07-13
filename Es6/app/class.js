@@ -8,19 +8,13 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-/**
- * Created by Akshar on 7/11/2017.
- */
 var Person = (function () {
     function Person(firstname, lastname) {
-        this.firstname = " ";
-        this.lastname = " ";
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.firstname = firstname;
         this.lastname = lastname;
     }
-    Person.prototype.whoareyou = function () {
-        return "hi i am  " + this.firstname + "  " + this.lastname;
-    };
     return Person;
 }());
 var Student = (function (_super) {
@@ -34,7 +28,11 @@ var Student = (function (_super) {
     Student.prototype.whoareyou = function () {
         return "hi i am  " + this.firstname + "  " + this.lastname + " and my course is " + this.course;
     };
+    Student.prototype.symbolnumber = function (number) {
+        return "my symbol number is " + number;
+    };
     return Student;
 }(Person));
 var student1 = new Student("sandeep", "Ghimire", "Javascript");
 console.log(student1.whoareyou());
+console.log(student1.symbolnumber(927901));
